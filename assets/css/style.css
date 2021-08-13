@@ -28,7 +28,6 @@
 }
 
 .informationContainer {
-    background-color: palegoldenrod;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -64,7 +63,7 @@
 }
 
 .project {
-    border: 1px solid black;
+    max-width: 400px;
     width: 100vw;
     margin: 3em 0 3em 0;
     display:flex;
@@ -73,6 +72,7 @@
 }
 
 .screenshot {
+    max-width: 400px;
     width: 95vw;
     height: 400px; 
     background-color: burlywood;
@@ -80,10 +80,43 @@
 
 .live {
     width: 95vw;
-    text-align: right;
+    padding: 0 1em;
+    height: 2em;
+    line-height: 2em;
+    color:black;
+}
+
+.liveLink {
+    float:right;
 }
 
 .code {
     width: 95vw;
-    text-align: right;
+    color:white;
+    background-color: black;
+    padding: 0 1em;
+    height: 2em;
+    line-height: 2em;
+}
+
+.gitLink {
+    float:right;
+}
+
+.live:hover {
+    background-color:yellow;
+}
+
+.live:visited:hover {
+    background-color:yellow;
+}
+
+.code:hover,
+code:visited:hover {
+    background-color: yellow;
+    color:black;
+}
+
+.projectName {
+
 }
